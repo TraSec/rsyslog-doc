@@ -40,7 +40,7 @@ Server
    :widths: auto
    :class: parameter-table
 
-   "array", "none", "no", "none"
+   "array", "localhost", "no", "none"
 
 An array of HTTP REST servers in the specified format. If no scheme
 is specified, it will be chosen according to usehttps_. If no port is
@@ -103,7 +103,7 @@ restPath
    :widths: auto
    :class: parameter-table
 
-   "word", "none", "no", "none"
+   "word", "none", "yes", "none"
 
 HTTP path for your REST API to send your logs to.
 
@@ -141,7 +141,7 @@ usehttps
    :widths: auto
    :class: parameter-table
 
-   "binary", "off", "no", "none"
+   "binary", "on", "no", "none"
 
 Default scheme to use when sending events to HTTP REST endpoint if none
 is specified on a  server_. The issuing CA of the server must be trusted by
@@ -192,7 +192,7 @@ bulkmode
    :widths: auto
    :class: parameter-table
 
-   "binary", "off", "no", "none"
+   "binary", "on", "no", "none"
 
 The default "on" setting means multiple logs are shipped in the same request,
 delimited by a newline (\n) character. The maximum number of logs sent in a
@@ -211,7 +211,7 @@ maxbytes
    :widths: auto
    :class: parameter-table
 
-   "word", "100m", "no", "none"
+   "word", "10m", "no", "none"
 
 When shipping logs with bulkmode_ **on**, maxbytes specifies the maximum
 size of the request body sent to the HTTP REST endpoint. Logs are batched until
