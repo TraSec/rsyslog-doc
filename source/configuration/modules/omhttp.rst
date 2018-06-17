@@ -414,7 +414,7 @@ retryruleset
    :widths: auto
    :class: parameter-table
 
-   "word", "", "no", "none"
+   "word", "none", "no", "none"
 
 If `retryfailures` is not `"on"` (:ref:`omhttp-retryfailures`) then
 this parameter has no effect.  This parameter specifies the name of a ruleset
@@ -590,6 +590,6 @@ The following sample does the following:
 
 .. code-block:: none
 
-module(load="omhttp")
-*.*     action(type="omhttp" server="api-gateway-1" restpath="api/logs"
+    module(load="omhttp")
+    *.*     action(type="omhttp" server="api-gateway-1" restpath="api/logs"
                httpheaderkey="x-api-key" httpheadervalue="mySecretapiKEY")
