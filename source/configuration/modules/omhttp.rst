@@ -258,11 +258,11 @@ httpheaderkey
 ^^^
 
 .. csv-table::
-:header: "type", "default", "mandatory", "|FmtObsoleteName| directive"
-:widths: auto
-:class: parameter-table
+   :header: "type", "default", "mandatory", "|FmtObsoleteName| directive"
+   :widths: auto
+   :class: parameter-table
 
-"word", "none", "no", "none"
+   "word", "none", "no", "none"
 
 If you have HTTP header based authentication, you set the key of the header.
 This must be used together with httpheadervalue and is especially useful for
@@ -275,11 +275,11 @@ httpheadervalue
 ^^^
 
 .. csv-table::
-:header: "type", "default", "mandatory", "|FmtObsoleteName| directive"
-:widths: auto
-:class: parameter-table
+   :header: "type", "default", "mandatory", "|FmtObsoleteName| directive"
+   :widths: auto
+   :class: parameter-table
 
-"word", "none", "no", "none"
+   "word", "none", "no", "none"
 
 If you have HTTP header based authentication, you set the value of the header.
 
